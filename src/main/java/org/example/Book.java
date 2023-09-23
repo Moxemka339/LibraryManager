@@ -17,7 +17,7 @@ public class Book {
         System.out.println("Book name: " + this.Name +
                 "\nBook author: " + this.Author +
                 "\nBook year: " + this.Year +
-                "\nBook ISBN: " + this.ISBN + "\n");
+                "\nBook ISBN: " + this.ISBN + " \n");
     }
     public static void ShowAll(ArrayList<Book> books){
         for(Book book : books){

@@ -59,7 +59,7 @@ public class Main {
             } else if (query == 4) {
                 while (true) {
                     System.out.println("Enter the book's ISBN number: \n" +
-                            "0. Exit the deletion menu.");
+                            "0. Exit the deletion menu");
                     String QueryISBN = s.nextLine();
                     if (QueryISBN.equals("0")) break;
                     if (Book.Remove(books, QueryISBN)) {

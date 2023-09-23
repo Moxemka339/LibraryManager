@@ -19,9 +19,9 @@ public class Book {
                 "\nBook year: " + this.Year +
                 "\nBook ISBN: " + this.ISBN + "\n");
     }
-    public void ShowAll(ArrayList<Book> books){
+    public static void ShowAll(ArrayList<Book> books){
         for(Book book : books){
-            Show();
+            book.Show();
         }
     }
     public static boolean Find(ArrayList<Book> books, String name){
@@ -34,7 +34,7 @@ public class Book {
         System.out.println("Не знайдено книжки з такою назвою. Спробуйте перевірити правильність набору.");
         return false;
     }
-    public static boolean RemoveBook(ArrayList<Book> books, String isbn){
+    public static boolean Remove(ArrayList<Book> books, String isbn){
         int index = 0;
         for(Book book : books){
             if(book.ISBN.equals(isbn)){
